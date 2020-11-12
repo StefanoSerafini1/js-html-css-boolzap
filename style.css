@@ -87,9 +87,23 @@ body {
   color: #3acaf8cf;
 }
 /* zona ricerca contatti e conversazione */
-.input{
+.input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #f6f6f6;
+  border-right: transparent;
+  cursor: pointer;
   padding: 10px;
   background: #e1e0dd61;
+}
+.input i {
+  font-size: 8px;
+  color: #edece9f2;
+  cursor: pointer;
+  background-color: white;
+  padding: 5.5px;
+  border: 0.5px white solid;
+  border-radius: 5px;
 }
 .input input{
   border: 0.5px white solid;
