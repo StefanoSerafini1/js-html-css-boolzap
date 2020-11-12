@@ -36,9 +36,33 @@ body {
 }
 /* zona profilo parte alta con avatar e nome */
 .profilo{
-  padding:30px;
+  padding:8px;
   background: #e1e0ddba;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+.avatarProfilo img {
+  max-width: 40px;
+  border-radius: 50%;
+  align-self: center;
+}
+.avatarProfilo{
+  align-self: center;
+  display: flex;
+  list-style: none;
+}
+.avatarProfilo p{
+  align-self: center;
+}
+
+.iconeProfilo i {
+  font-size: 21px;
+  color: #b1b1b1;
+  cursor: pointer;
+  padding: 5px;
+}
+
 /* zona azzurrina con campanellina notifiche */
 .notifiche{
   padding: 35px;
@@ -46,7 +70,7 @@ body {
 }
 /* zona ricerca contatti e conversazione */
 .input{
-  padding: 20px;
+  padding: 10px;
   background: #e1e0dd61;
 }
 .input input{
@@ -54,8 +78,8 @@ body {
   width: 80%;
   padding: 5px;
   border-radius: 5px;
-  font-size: 10px;
-  color: #e1e0ddba;
+  font-size: 8px;
+  color: #edece9f2;
 }
 /* zona elenco conversazione già esistenti */
 .elencoConversazioni{
@@ -87,7 +111,7 @@ body {
   border-radius: 5px;
   font-size: 10px;
   align-items: center;
-  color: #e1e0ddba;
+  color: #edece9f2;
 }
 /* zona conversazione */
 .conversazione{

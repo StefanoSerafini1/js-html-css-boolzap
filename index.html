@@ -4,13 +4,26 @@
     <meta charset="utf-8">
     <title>Boolzap</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--cercare font/ link font da aggiungere -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div id="tot "class="app">
+    <div id="app" class="app">
       <aside class="colonnaSx">
-        <section class="profilo"></section>
+        <section class="profilo">
+          <ul class="avatarProfilo">
+            <li>
+              <img :src="'img/avatar'+ user.avatar +'.jpg'" >
+            </li>
+            <p>{{user.name}}<p>
+          </ul>
+          <div class="iconeProfilo">
+             <i class="fas fa-circle-notch"></i>
+             <i class="fas fa-comment-alt"></i>
+             <i class="fas fa-ellipsis-v"></i>
+          </div>
+        </section>
         <section class="notifiche"></section>
         <section class="input">
 
@@ -27,6 +40,8 @@
       </main>
 
     </div>
-
+    <!-- script js -->
+     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+     <script src="main.js" charset="utf-8"></script>
   </body>
 </html>
