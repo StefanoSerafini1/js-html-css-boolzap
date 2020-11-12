@@ -26,7 +26,7 @@ body {
   background: grey;
 }
 
-
+/* zona colonna sinistra */
 .colonnaSx{
   flex-basis: 40%;
   background: #ffff;
@@ -34,36 +34,62 @@ body {
   flex-direction: column;
   border-right:1px solid #c4c3c1;
 }
-
+/* zona profilo parte alta con avatar e nome */
 .profilo{
   padding:30px;
   background: #e1e0ddba;
 }
+/* zona azzurrina con campanellina notifiche */
 .notifiche{
   padding: 35px;
   background: #3acaf8cf;
 }
+/* zona ricerca contatti e conversazione */
 .input{
   padding: 20px;
   background: #e1e0dd61;
 }
+.input input{
+  border: 0.5px white solid;
+  width: 80%;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 10px;
+  color: #e1e0ddba;
+}
+/* zona elenco conversazione già esistenti */
 .elencoConversazioni{
   flex-grow: 1;
   background: white;
 }
+/* colonna di dx con utente con cui stai conversando+conversazione+scrittura mex */
 .zonaDx{
   flex-basis: 60%;
   background-color: white;
   display: flex;
   flex-direction: column;
 }
-
-.nome,
-.inserimento{
+/* utente con cui stai conversando */
+.nome{
   padding:30px;
   background: #e1e0ddba;
 }
+/* scrittura mex */
+.inserimento{
+  padding:20px;
+  background: #e1e0ddba;
+}
 
+.inserimento input{
+  border: 0.5px white solid;
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 10px;
+  align-items: center;
+  color: #e1e0ddba;
+}
+/* zona conversazione */
 .conversazione{
   flex-grow: 1;
   background-image: url(img/mine.jpg);
