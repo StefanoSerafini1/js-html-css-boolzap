@@ -37,10 +37,24 @@
             <i class="fas fa-search"></i>
             <input type="text" placeholder="Cerca o inizia una nuova chat">
         </section>
-        <section class="elencoConversazioni"></section>
+        <section class="elencoConversazioni">
+           <div class="contatti"v-for='(item, index) in contacts'>
+             <img :src="('./img/avatar') + contacts[index].avatar + '.jpg'" alt="user">
+              <div class="user-name">
+                <h4>{{ contacts[index].name }}</h4>
+              </div>
+           </div>
+        </section>
       </aside>
       <main class="zonaDx">
-        <section class="nome"></section>
+        <section class="nome">
+          <ul class="avatarConvesrazione">
+            <li>
+              <img :src="'img/avatar'+ contacts.avatar +'.jpg'" >
+            </li>
+            <p>{{contacts.name}}<p>
+          </ul>
+        </section>
         <section class="conversazione"></section>
         <section class="inserimento">
           <i class="far fa-smile smile"></i>
