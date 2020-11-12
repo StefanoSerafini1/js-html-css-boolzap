@@ -5,6 +5,7 @@
 }
 
 body {
+  font-family: 'Lato', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,6 +90,10 @@ body {
   font-size: 15px;
   color: #3acaf8cf;
 }
+.testoNotifiche small:hover{
+  color: #787474;
+  text-decoration: underline;
+}
 /* zona ricerca contatti e conversazione */
 .input {
   display: flex;
@@ -154,23 +159,25 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.avatarConversazione img {
+.avatarNome img {
   max-width: 40px;
   border-radius: 50%;
   align-self: center;
   cursor: pointer;
 }
-.avatarConversazione{
+.avatarNome{
   align-self: center;
   display: flex;
   list-style: none;
 }
-.avatarConversazione p{
+.avatarNome p{
   align-self: center;
   cursor: pointer;
 }
-
-.iconeConversazione i {
+.avatarNome small{
+  color: #787474;
+}
+.iconeNome i {
   font-size: 18px;
   color: #b1b1b1;
   cursor: pointer;
