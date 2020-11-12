@@ -17,3 +17,55 @@ body {
     #d2dbdc 100%
     );
 }
+
+.app{
+  display: flex;
+  height: 95%;
+  width: 80%;
+  min-width: 900px;
+  background: grey;
+}
+
+
+.colonnaSx{
+  flex-basis: 40%;
+  background: #ffff;
+  display: flex;
+  flex-direction: column;
+  border-right:1px solid grey;
+}
+
+.profilo{
+  padding:30px;
+  background: green;
+}
+.notifiche{
+  padding: 35px;
+  background: lightblue;
+}
+.input{
+  padding: 20px;
+  background: black;
+}
+.elencoConversazioni{
+  flex-grow: 1;
+  background: white;
+}
+.zonaDx{
+  flex-basis: 60%;
+  background: blue;
+  display: flex;
+  flex-direction: column;
+}
+
+.nome,
+.inserimento{
+  padding:30px;
+  background: green;
+}
+
+.conversazione{
+  flex-grow: 1;
+  background-image: url(img/mine.jpg);
+  padding: 30px;
+}
