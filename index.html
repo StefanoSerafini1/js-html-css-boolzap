@@ -13,6 +13,7 @@
   <body>
     <div id="app" class="app">
       <aside class="colonnaSx">
+        <!-- zona profilo personale -->
         <section class="profilo">
           <ul class="avatarProfilo">
             <li>
@@ -26,6 +27,7 @@
              <i class="fas fa-ellipsis-v"></i>
           </div>
         </section>
+        <!-- zona notifiche azzurrina con icona campanella -->
         <section class="notifiche">
           <div class="campanella">
              <i class="fas fa-bell-slash"></i>
@@ -35,10 +37,12 @@
             <small>Attiva notifiche desktop</small>
           </div>
         </section>
+        <!-- input di ricerca da perfezionare molto -->
         <section class="input">
             <i class="fas fa-search"></i>
             <input type="text" placeholder="Cerca o inizia una nuova chat">
         </section>
+        <!-- elenco dei contatti con conversazioni già iniziate -->
         <section class="elencoConversazioni">
            <div class="contatti"v-for='(item, index) in contacts'>
              <img :src="('img/avatar') + contacts[index].avatar + '.jpg'" alt="user">
@@ -49,6 +53,7 @@
         </section>
       </aside>
       <main class="zonaDx">
+        <!-- zona nome utente con cui siamo in conversazione -->
         <section class="nome">
           <ul class="avatarNome">
             <li>
@@ -62,7 +67,9 @@
             <i class="fas fa-ellipsis-v"></i>
           </div>
         </section>
+        <!-- zona dei messaggi riguardanti la conversazione -->
         <section class="conversazione"></section>
+        <!-- zona del inserimento del nuovo messaggio -->
         <section class="inserimento">
           <i class="far fa-smile smile"></i>
           <input type="text" class="new-message" placeholder="Scrivi un messaggio">
