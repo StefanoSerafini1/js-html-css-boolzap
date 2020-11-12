@@ -64,9 +64,27 @@ body {
 }
 
 /* zona azzurrina con campanellina notifiche */
-.notifiche{
-  padding: 35px;
+.notifiche {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
   background: #3acaf8cf;
+  cursor: pointer;
+}
+.campanella {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.campanella i {
+  font-size: 15px;
+  color: #3acaf8cf;
 }
 /* zona ricerca contatti e conversazione */
 .input{
