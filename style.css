@@ -32,20 +32,20 @@ body {
   background: #ffff;
   display: flex;
   flex-direction: column;
-  border-right:1px solid grey;
+  border-right:1px solid #c4c3c1;
 }
 
 .profilo{
   padding:30px;
-  background: green;
+  background: #e1e0ddba;
 }
 .notifiche{
   padding: 35px;
-  background: lightblue;
+  background: #3acaf8cf;
 }
 .input{
   padding: 20px;
-  background: black;
+  background: #e1e0dd61;
 }
 .elencoConversazioni{
   flex-grow: 1;
@@ -53,7 +53,7 @@ body {
 }
 .zonaDx{
   flex-basis: 60%;
-  background: blue;
+  background-color: white;
   display: flex;
   flex-direction: column;
 }
@@ -61,7 +61,7 @@ body {
 .nome,
 .inserimento{
   padding:30px;
-  background: green;
+  background: #e1e0ddba;
 }
 
 .conversazione{
