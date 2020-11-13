@@ -71,7 +71,7 @@
         <section class="messaggistica">
           <div class="messaggiGen" v-for="message in contacts[indiceContatti].messages">
             <div :class="{'inviato': message.status == 'sent','ricevuto' : message.status == 'received'}">
-              <h3>{{ message.message }}</h3>
+              <p>{{ message.message }}</p>
               <small>{{ message.date }}</small>
             </div>
           </div>

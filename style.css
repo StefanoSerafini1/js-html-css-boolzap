@@ -219,38 +219,37 @@ body {
   align-self: center;
 }
 
-/* zona conversazione */
+/* zona messaggistica */
+/* imp. generali della zona messagistica */
 .messaggistica{
   flex-grow: 1;
   background-image: url(img/mine.jpg);
   padding: 30px;
 }
-.messagiGen {
+.messaggiGen {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
 }
-
+/* imp per i mex inviati  */
 .inviato {
   display: flex;
   align-self: flex-end;
   flex-direction: column;
   margin-bottom: 10px;
   padding: 10px;
-  background: lightgreen;
+  background: #94f894;
   border-radius: 5px;
 }
-
-.inviato h3,
-.ricevuto h3 {
+.inviato p{
   margin-right: 50px;
   padding-bottom: 5px;
+  font-size: 15px;
 }
-
-.inviato small,
-.ricevuto small {
+.inviato small {
   font-size: 10px;
   text-align: right;
+  color: #787474;
 }
 
 .ricevuto {
@@ -261,4 +260,14 @@ body {
   padding: 10px;
   background: #fff;
   border-radius: 5px;
+}
+.ricevuto p {
+  margin-right: 50px;
+  padding-bottom: 5px;
+  font-size: 15px;
+}
+.ricevuto small {
+  font-size: 10px;
+  text-align: right;
+  color: #787474;
 }
