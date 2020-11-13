@@ -68,7 +68,15 @@
           </div>
         </section>
         <!-- zona dei messaggi riguardanti la conversazione -->
-        <section class="conversazione"></section>
+        <section class="conversazione">
+          <div class="messaggi" v-for="message in contacts[indiceContatti].messages">
+            <h3>{{ message.message }}</h3>
+            <div class="orarioMessaggio">{{ message.date }}</div>
+          </div>
+
+
+
+        </section>
         <!-- zona del inserimento del nuovo messaggio -->
         <section class="inserimento">
           <i class="far fa-smile smile"></i>
