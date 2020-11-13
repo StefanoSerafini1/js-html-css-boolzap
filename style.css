@@ -239,7 +239,7 @@ body {
   margin-bottom: 10px;
   padding: 10px;
   background: #94f894;
-  border-radius: 5px;
+  border-radius: 8px;
   /* per farlo più simile possibile allo screen */
   width: 45%;
 }
@@ -261,7 +261,7 @@ body {
   margin-bottom: 10px;
   padding: 10px;
   background: #fff;
-  border-radius: 5px;
+  border-radius: 8px;
   /* per farlo più simile possibile allo screen */
   width: 45%;
 }
