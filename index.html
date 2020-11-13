@@ -68,14 +68,13 @@
           </div>
         </section>
         <!-- zona dei messaggi riguardanti la conversazione -->
-        <section class="conversazione">
-          <div class="messaggi" v-for="message in contacts[indiceContatti].messages">
-            <h3>{{ message.message }}</h3>
-            <div class="orarioMessaggio">{{ message.date }}</div>
+        <section class="messaggistica">
+          <div class="messaggiGen" v-for="message in contacts[indiceContatti].messages">
+            <div :class="{'inviato': message.status == 'sent','ricevuto' : message.status == 'received'}">
+              <h3>{{ message.message }}</h3>
+              <small>{{ message.date }}</small>
+            </div>
           </div>
-
-
-
         </section>
         <!-- zona del inserimento del nuovo messaggio -->
         <section class="inserimento">

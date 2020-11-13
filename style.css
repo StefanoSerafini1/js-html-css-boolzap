@@ -220,8 +220,45 @@ body {
 }
 
 /* zona conversazione */
-.conversazione{
+.messaggistica{
   flex-grow: 1;
   background-image: url(img/mine.jpg);
   padding: 30px;
+}
+.messagiGen {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.inviato {
+  display: flex;
+  align-self: flex-end;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: lightgreen;
+  border-radius: 5px;
+}
+
+.inviato h3,
+.ricevuto h3 {
+  margin-right: 50px;
+  padding-bottom: 5px;
+}
+
+.inviato small,
+.ricevuto small {
+  font-size: 10px;
+  text-align: right;
+}
+
+.ricevuto {
+  display: flex;
+  align-self: flex-start;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 5px;
 }
