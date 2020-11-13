@@ -4,6 +4,7 @@
 var app = new Vue({
     el: '#app',
     data: {
+
         // nostro account
         user: {
             name: 'Nome Utente',
@@ -94,7 +95,12 @@ var app = new Vue({
                     }
                 ],
             },
-        ]
+        ],
+        indiceContatti: 0,
     },
-    methods: {}
+    methods: {
+      presaIndice(index){
+        this.indiceContatti = index;
+      }
+    }
 });

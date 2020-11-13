@@ -44,8 +44,8 @@
         </section>
         <!-- elenco dei contatti con conversazioni già iniziate -->
         <section class="elencoConversazioni">
-           <div class="contatti"v-for='(item, index) in contacts'>
-             <img :src="('img/avatar') + contacts[index].avatar + '.jpg'" alt="user">
+           <div class="contatti" v-for='(item, index) in contacts'  @click='presaIndice(index)'>
+             <img :src="('./img/avatar') + contacts[index].avatar + '.jpg'" alt="user">
               <div class="user-name">
                 <h4>{{ contacts[index].name }}</h4>
               </div>
@@ -57,9 +57,9 @@
         <section class="nome">
           <ul class="avatarNome">
             <li>
-              <img :src="('img/avatar') + contacts[0].avatar + '.jpg'" alt="user conversazione">
+              <img :src="`img/avatar${contacts[indiceContatti].avatar}.jpg`" alt="contacts[indiceContatti].name">
             </li>
-            <p>{{ contacts[0].name }} <br> <small>Ultimo acceso oggi alle 10:35</small></p>
+            <p>{{ contacts[indiceContatti].name }} <br> <small>Ultimo acceso oggi alle 10:35</small></p>
           </ul>
           <div class="iconeNome">
             <i class="fas fa-search"></i>
