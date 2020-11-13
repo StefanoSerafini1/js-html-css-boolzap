@@ -240,6 +240,8 @@ body {
   padding: 10px;
   background: #94f894;
   border-radius: 5px;
+  /* per farlo più simile possibile allo screen */
+  width: 45%;
 }
 .inviato p{
   margin-right: 50px;
@@ -251,7 +253,7 @@ body {
   text-align: right;
   color: #787474;
 }
-
+/* imp per i messaggi ricevuti */
 .ricevuto {
   display: flex;
   align-self: flex-start;
@@ -260,6 +262,8 @@ body {
   padding: 10px;
   background: #fff;
   border-radius: 5px;
+  /* per farlo più simile possibile allo screen */
+  width: 45%;
 }
 .ricevuto p {
   margin-right: 50px;
