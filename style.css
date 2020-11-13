@@ -109,17 +109,17 @@ body {
   color: #edece9f2;
   cursor: pointer;
   background-color: white;
-  padding: 5.5px;
+  padding: 6px;
+  height: 25px;
   border: 0.5px white solid;
-  border-radius: 5px;
 }
 .input input{
   border: 0.5px white solid;
   width: 80%;
   padding: 5px;
-  border-radius: 5px;
   font-size: 10px;
   color: #edece9f2;
+  height: 25px;
 }
 /* zona elenco conversazione già esistenti */
 .elencoConversazioni{
