@@ -104,6 +104,7 @@ body {
   padding: 10px;
   background: #e1e0dd61;
 }
+
 .input i {
   font-size: 10px;
   color: #edece9f2;
@@ -114,12 +115,16 @@ body {
   border: 0.5px white solid;
 }
 .input input{
-  border: 0.5px white solid;
   width: 80%;
-  padding: 5px;
   font-size: 10px;
-  color: #edece9f2;
+  color: black;
   height: 25px;
+  outline: none;
+  border: none;
+}
+.input input:focus{
+  border: 3px solid #f3f82ea6;
+  border-radius: 5px;
 }
 /* zona elenco conversazione già esistenti */
 .elencoConversazioni{
@@ -202,6 +207,10 @@ body {
  font-size: 12px;
  border-radius: 5px;
 }
+.inserimento input:focus{
+  border: 3px #f3f82ea6 solid;
+  border-radius: 2px;
+}
 
 /* inserimaìento icone */
 .inserimento i {
@@ -218,7 +227,6 @@ body {
   margin-right: 20px;
   align-self: center;
 }
-
 /* zona messaggistica */
 /* imp. generali della zona messagistica */
 .messaggistica{
