@@ -104,7 +104,7 @@ var app = new Vue({
       }
     },
     //nuova funz milestone 3 per aggiunta new messaggio inviato nella conversazione
-    newMex(i) {
+    newMex(index) {
       if (this.messageWrite !== '') {
         this.contacts[i].messages.push({
           date: dayjs().format('DD/MM/YY, HH:mm:ss'),
@@ -118,4 +118,11 @@ var app = new Vue({
         }, 2000);
       }
     },
+    botMsg(index) {
+      this.contacts[i].messages.push({
+        date: dayjs().format('DD/MM/YY, HH:mm:ss'),
+        message: 'Si , No , Forse',
+        status: 'received'
+      });
+    }
 });
