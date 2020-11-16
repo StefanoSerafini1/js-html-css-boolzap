@@ -106,7 +106,7 @@ var app = new Vue({
     //nuova funz milestone 3 per aggiunta new messaggio inviato nella conversazione
     newMex(index) {
       if (this.messageWrite !== '') {
-        this.contacts[i].messages.push({
+        this.contacts[index].messages.push({
           date: dayjs().format('DD/MM/YY, HH:mm:ss'),
           message: this.messageWrite,
           status: 'sent'
@@ -119,7 +119,7 @@ var app = new Vue({
       }
     },
     botMsg(index) {
-      this.contacts[i].messages.push({
+      this.contacts[index].messages.push({
         date: dayjs().format('DD/MM/YY, HH:mm:ss'),
         message: 'Si , No , Forse',
         status: 'received'
