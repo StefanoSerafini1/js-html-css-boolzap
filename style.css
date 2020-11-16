@@ -249,7 +249,7 @@ body {
   background: #94f894;
   border-radius: 8px;
   /* per farlo più simile possibile allo screen */
-  width: 45%;
+  max-width: 45%;
 }
 .inviato p{
   margin-right: 50px;
@@ -271,7 +271,7 @@ body {
   background: #fff;
   border-radius: 8px;
   /* per farlo più simile possibile allo screen */
-  width: 45%;
+  max-width: 45%;
 }
 .ricevuto p {
   margin-right: 50px;
