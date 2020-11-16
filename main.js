@@ -4,8 +4,8 @@
 var app = new Vue({
     el: '#app',
     data: {
+        //variabile per messaggio scritto da noi
         messageWrite: '',
-
         // nostro account
         user: {
             name: 'Nome Utente',
@@ -104,6 +104,7 @@ var app = new Vue({
         this.indiceContatti = index;
       },
     //nuova funz milestone 3 per aggiunta new messaggio inviato nella conversazione
+    //con data e ora del momento del invio
     newMex(index) {
       if (this.messageWrite !== '') {
         this.contacts[index].messages.push({
@@ -118,6 +119,7 @@ var app = new Vue({
         }, 2000);
       }
     },
+    //funzione per risposta automatica con orario e data live
     rispAuto(index) {
       this.contacts[index].messages.push({
         date: dayjs().format('DD/MM/YY, HH:mm:ss'),
