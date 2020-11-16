@@ -4,6 +4,7 @@
 var app = new Vue({
     el: '#app',
     data: {
+        messageWrite: '',
 
         // nostro account
         user: {
@@ -101,8 +102,7 @@ var app = new Vue({
     methods: {
       presaIndice(index){
         this.indiceContatti = index;
-      }
-    },
+      },
     //nuova funz milestone 3 per aggiunta new messaggio inviato nella conversazione
     newMex(index) {
       if (this.messageWrite !== '') {
@@ -114,7 +114,7 @@ var app = new Vue({
         this.messageWrite = ''
         //timeout di 2 secondi per la risposta automatica(ok)
         setTimeout(() => {
-          this.rispAuto(i)
+          this.rispAuto(index)
         }, 2000);
       }
     },
@@ -125,4 +125,5 @@ var app = new Vue({
         status: 'received'
       });
     }
+  }
 });
