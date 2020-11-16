@@ -118,7 +118,7 @@ var app = new Vue({
         }, 2000);
       }
     },
-    botMsg(index) {
+    rispAuto(index) {
       this.contacts[index].messages.push({
         date: dayjs().format('DD/MM/YY, HH:mm:ss'),
         message: 'Si , No , Forse',
