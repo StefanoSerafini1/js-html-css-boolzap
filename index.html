@@ -40,7 +40,9 @@
         <!-- input di ricerca da perfezionare molto -->
         <section class="input">
             <i class="fas fa-search"></i>
-            <input type="text" placeholder="Cerca o inizia una nuova chat">
+            <input type="text" placeholder="Cerca o inizia una nuova chat"
+            v-model="cerca"
+            @keyup="cercaConversazione">
         </section>
         <!-- elenco dei contatti con conversazioni già iniziate -->
         <section class="elencoConversazioni">
