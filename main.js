@@ -126,6 +126,17 @@ var app = new Vue({
         message: 'Si , No , Forse',
         status: 'received'
       });
+    },
+    //Implementare la sezione di ricerca del contatto.
+    // Mentre digito nell'input di ricerca i contati vengono filtrati
+    //in base al testo inserito nel campo input,come visto all'assegnazione.
+    cercaConversazione(){
+      this.contacts.forEach((item) => {
+        if ( ){
+        } else {
+        }
+
+      })
     }
   }
 });
