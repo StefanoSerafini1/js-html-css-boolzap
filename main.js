@@ -6,6 +6,7 @@ var app = new Vue({
     data: {
         //variabile per messaggio scritto da noi
         messageWrite: '',
+        cerca:'',
         // nostro account
         user: {
             name: 'Nome Utente',
@@ -132,9 +133,10 @@ var app = new Vue({
     //in base al testo inserito nel campo input,come visto all'assegnazione.
     cercaConversazione(){
       this.contacts.forEach((item) => {
-        if (!(item.name.toLowerCase()).includes(this.cerca.toLowerCase().trim())) ){
-          
+        if (!(item.name.toLowerCase()).includes(this.cerca.toLowerCase().trim()) ){
+          item.visible= false;
         } else {
+          item.visible=true;
         }
 
       })
