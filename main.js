@@ -132,7 +132,8 @@ var app = new Vue({
     //in base al testo inserito nel campo input,come visto all'assegnazione.
     cercaConversazione(){
       this.contacts.forEach((item) => {
-        if ( ){
+        if (!(item.name.toLowerCase()).includes(this.cerca.toLowerCase().trim())) ){
+          
         } else {
         }
 
