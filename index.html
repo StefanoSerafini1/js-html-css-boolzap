@@ -47,7 +47,8 @@
         <!-- elenco dei contatti con conversazioni già iniziate -->
         <section class="elencoConversazioni">
            <div class="contatti" v-for='(item, index) in contacts'  @click='presaIndice(index)'
-           v-show="item.visible == true"> 
+           v-show="item.visible == true">
+           <!-- v-show per ricerca conversazione -->
              <img :src="('./img/avatar') + contacts[index].avatar + '.jpg'" alt="user">
               <div class="user-name">
                 <h4>{{ contacts[index].name }}</h4>

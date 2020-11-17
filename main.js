@@ -133,6 +133,8 @@ var app = new Vue({
     //in base al testo inserito nel campo input,come visto all'assegnazione.
     cercaConversazione(){
       this.contacts.forEach((item) => {
+        //controllo settandoli entrambi in piccolo per non avere problemi con maiuscole
+        //settando la variabile di visibilità o true o false a seconda del esigenza
         if (!(item.name.toLowerCase()).includes(this.cerca.toLowerCase().trim()) ){
           item.visible= false;
         } else {
