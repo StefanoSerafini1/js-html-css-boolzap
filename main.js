@@ -143,5 +143,13 @@ var app = new Vue({
 
       })
     }
+  //ultimoAccesso(){
+    //this.contacts[this.indiceContatti].messages.forEach((message) => {
+        //if (message.status === 'received') {
+          //this.lastAccess = message.date
+          //}
+      //});
+        //return this.lastAccess;
+  //}
   }
 });
